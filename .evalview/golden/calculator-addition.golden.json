@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "test_name": "calculator-addition",
+    "blessed_at": "2026-10-19T19:51:03.785405",
+    "blessed_by": "user",
+    "source_result_file": null,
+    "score": 87.5,
+    "notes": null,
+    "version": 1,
+    "model_id": null,
+    "model_provider": null
+  },
+  "trace": {
+    "session_id": "session-1792410661",
+    "start_time": "2026-10-19T19:51:01.313411",
+    "end_time": "2026-10-19T19:51:03.768717",
+    "steps": [
+      {
+        "step_id": "step-0",
+        "step_name": "calculator",
+        "tool_name": "calculator",
+        "parameters": {
+          "operation": "add",
+          "a": 10.0,
+          "b": 5.0
+        },
+        "output": 15.0,
+        "success": true,
+        "error": null,
+        "metrics": {
+          "latency": 0.0,
+          "cost": 0.001,
+          "tokens": null
+        },
+        "turn_index": null,
+        "turn_query": null
+      }
+    ],
+    "final_output": "The result of 10.0 + 5.0 = 15.0",
+    "metrics": {
+      "total_cost": 0.001,
+      "total_latency": 2455.306,
+      "total_tokens": {
+        "input_tokens": 16,
+        "output_tokens": 31,
+        "cached_tokens": 0
+      }
+    },
+    "trace_context": {
+      "trace_id": "e6b7daccfda14119",
+      "root_span_id": "57c3c860",
+      "spans": [
+        {
+          "span_id": "57c3c860",
+          "parent_span_id": null,
+          "trace_id": "e6b7daccfda14119",
+          "kind": "agent",
+          "name": "HTTP Agent",
+          "start_time": "2026-10-19T19:51:01.313411",
+          "end_time": "2026-10-19T19:51:03.768717",
+          "duration_ms": 2455.306,
+          "status": "ok",
+          "error_message": null,
+          "llm": null,
+          "tool": null,
+          "cost": 0.0
+        },
+        {
+          "span_id": "daff338b",
+          "parent_span_id": null,
+          "trace_id": "e6b7daccfda14119",
+          "kind": "tool",
+          "name": "calculator",
+          "start_time": "2026-10-19T19:51:03.768717",
+          "end_time": "2026-10-19T19:51:03.768717",
+          "duration_ms": 0.0,
+          "status": "ok",
+          "error_message": null,
+          "llm": null,
+          "tool": {
+            "tool_name": "calculator",
+            "parameters": {
+              "operation": "add",
+              "a": 10.0,
+              "b": 5.0
+            },
+            "result": 15.0
+          },
+          "cost": 0.0
+        }
+      ],
+      "start_time": "2026-10-19T19:51:01.313411",
+      "end_time": "2026-10-19T19:51:03.768717",
+      "total_llm_calls": 0,
+      "total_tool_calls": 1,
+      "total_cost": 0.0
+    },
+    "model_id": null,
+    "model_provider": null,
+    "turns": null,
+    "rationale_events": []
+  },
+  "tool_sequence": [
+    "calculator"
+  ],
+  "output_hash": "503a67fd",
+  "per_turn_tool_sequences": null,
+  "per_turn_outputs": null
+}

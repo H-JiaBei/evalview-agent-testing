@@ -1,0 +1,15 @@
+name: "calculator-subtraction"
+description: "减法运算：应调用 calculator 工具并返回正确结果"
+
+input:
+  query: "calculate 20 - 8"
+
+expected:
+  tools:
+    - calculator
+  output:
+    contains:
+      - "12"
+
+thresholds:
+  min_score: 70

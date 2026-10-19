@@ -4,3 +4,8 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 *.log
+
+# EvalView 运行时产物（保留 config.yaml 与 golden 基线）
+.evalview/history.jsonl
+.evalview/state.json
+.evalview/latest-check.html

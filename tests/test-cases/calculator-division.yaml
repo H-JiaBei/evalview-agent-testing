@@ -1,0 +1,15 @@
+name: "calculator-division"
+description: "除法运算：应调用 calculator 工具并返回正确结果"
+
+input:
+  query: "calculate 100 / 4"
+
+expected:
+  tools:
+    - calculator
+  output:
+    contains:
+      - "25"
+
+thresholds:
+  min_score: 70
